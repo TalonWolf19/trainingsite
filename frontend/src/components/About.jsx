@@ -4,7 +4,7 @@ import { fadeUp } from "@/lib/motion";
 import { Award, Users, Calendar } from "lucide-react";
 
 const ABOUT_IMG =
-  "https://customer-assets.emergentagent.com/job_coach-elite-training/artifacts/xv1mn6i1_WhatsApp%20Image%202026-05-21%20at%2007.24.41.jpeg";
+  "https://customer-assets.emergentagent.com/job_coach-elite-training/artifacts/mato9o6z_WhatsApp%20Image%202026-05-21%20at%2014.00.48.jpeg";
 
 function useCountUp(target, duration = 1600, start = false) {
   const [value, setValue] = useState(0);
