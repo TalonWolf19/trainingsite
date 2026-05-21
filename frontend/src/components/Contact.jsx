@@ -54,7 +54,7 @@ export default function Contact() {
     try {
       await axios.post(`${API}/consultation`, form);
       toast.success("Consultation request received", {
-        description: "Coach Alex will reach out within 24 hours.",
+        description: "Coach Arymmann will reach out within 24 hours.",
       });
       setForm(initialState);
     } catch (err) {
@@ -138,7 +138,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={onChange("name")}
                 className={inputCls}
-                placeholder="Alex Carter"
+                placeholder="Your full name"
               />
               {errors.name && <p className="mt-1 text-xs text-[#E63946]">{errors.name}</p>}
             </div>

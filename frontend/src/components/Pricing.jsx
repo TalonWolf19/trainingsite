@@ -6,7 +6,7 @@ const TIERS = [
   {
     name: "Starter",
     tagline: "Foundation builder",
-    price: 149,
+    price: 4000,
     blurb: "For lifters ready to ditch random workouts and train with intent.",
     features: [
       "4-week periodized program",
@@ -21,7 +21,7 @@ const TIERS = [
   {
     name: "Performance",
     tagline: "Most chosen",
-    price: 289,
+    price: 10000,
     blurb: "The complete coaching experience for serious athletes & competitors.",
     features: [
       "Custom 12-week blocks",
@@ -37,7 +37,7 @@ const TIERS = [
   {
     name: "Elite",
     tagline: "Pro & podium",
-    price: 549,
+    price: 15000,
     blurb: "Hands-on, daily-touch coaching for pro and podium-chasing athletes.",
     features: [
       "Everything in Performance",
@@ -113,7 +113,7 @@ export default function Pricing() {
               </p>
               <div className="mt-7 flex items-baseline gap-2 border-t border-b border-white/10 py-6">
                 <span className="font-heading text-6xl leading-none">
-                  ${t.price}
+                  ₹{t.price.toLocaleString("en-IN")}
                 </span>
                 <span className="font-subheading uppercase tracking-widest text-xs text-white/55">
                   / month

@@ -40,7 +40,7 @@ export default function Hero() {
             >
               <span className="block w-10 h-px bg-[#E63946]"></span>
               <span className="font-subheading uppercase tracking-[0.35em] text-xs text-[#E63946]">
-                Coach Alex Carter — CSCS Certified
+                Coach Arymmann Singh — S&amp;C Certified
               </span>
             </motion.div>
 

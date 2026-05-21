@@ -63,7 +63,7 @@ function Counter({ value, suffix, label, testId }) {
 const BADGES = [
   { icon: Calendar, label: "10+ Years Experience" },
   { icon: Users, label: "500+ Athletes Coached" },
-  { icon: Award, label: "NSCA / CSCS Certified" },
+  { icon: Award, label: "S&C Certified" },
 ];
 
 export default function About() {
@@ -78,14 +78,14 @@ export default function About() {
           <div className="relative aspect-[4/5] overflow-hidden">
             <img
               src={ABOUT_IMG}
-              alt="Coach Alex Carter training"
+              alt="Coach Arymmann Singh training"
               loading="lazy"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
             <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#1A1A1A] to-transparent" />
           </div>
           <div className="absolute -bottom-6 -right-4 lg:-right-8 bg-[#E63946] px-6 py-5">
-            <p className="font-heading text-3xl leading-none">CSCS</p>
+            <p className="font-heading text-3xl leading-none">S&amp;C</p>
             <p className="font-subheading uppercase text-[10px] tracking-[0.3em] mt-1">
               Certified
             </p>
@@ -110,8 +110,8 @@ export default function About() {
 
           <div className="mt-8 space-y-5 text-white/75 leading-relaxed max-w-2xl">
             <p>
-              I&apos;m <strong className="text-white">Alex Carter</strong> — a CSCS &amp;
-              NSCA-certified Strength &amp; Conditioning coach with over a decade of
+              I&apos;m <strong className="text-white">Arymmann Singh</strong> — a
+              certified Strength &amp; Conditioning coach with over a decade of
               experience programming for collegiate, professional and combat-sport
               athletes. From the platform to the pitch, I&apos;ve helped 500+ athletes
               hit personal records and stay healthy doing it.

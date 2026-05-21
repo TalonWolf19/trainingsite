@@ -109,7 +109,7 @@ export default function Footer() {
           </div>
           <p className="text-white/55 leading-relaxed max-w-md">
             Elite Strength &amp; Conditioning coaching for athletes who refuse the
-            average. Built by Coach Alex Carter, CSCS.
+            average. Built by Coach Arymmann Singh, S&amp;C Certified.
           </p>
           <div className="mt-7 flex items-center gap-3">
             {[
