@@ -54,7 +54,7 @@ export default function Contact() {
     try {
       await axios.post(`${API}/consultation`, form);
       toast.success("Consultation request received", {
-        description: "Coach Arymmann will reach out within 24 hours.",
+        description: "Coach Aryammann will reach out within 24 hours.",
       });
       setForm(initialState);
     } catch (err) {

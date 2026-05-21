@@ -40,7 +40,7 @@ export default function Hero() {
             >
               <span className="block w-10 h-px bg-[#E63946]"></span>
               <span className="font-subheading uppercase tracking-[0.35em] text-xs text-[#E63946]">
-                Coach Arymmann Singh — S&amp;C Certified
+                Coach Aryammann Singh — S&amp;C Certified
               </span>
             </motion.div>
 
@@ -106,12 +106,12 @@ export default function Hero() {
             className="lg:col-span-3 flex lg:flex-col gap-6 lg:gap-10 lg:items-end"
           >
             <div>
-              <p className="font-heading text-5xl text-[#E63946] leading-none">500<span className="text-white">+</span></p>
+              <p className="font-heading text-5xl text-[#E63946] leading-none">50<span className="text-white">+</span></p>
               <p className="font-subheading uppercase text-xs tracking-[0.25em] text-white/60 mt-2">Athletes Coached</p>
             </div>
             <div className="hidden lg:block w-16 h-px bg-white/20 self-end"></div>
             <div>
-              <p className="font-heading text-5xl text-white leading-none">10<span className="text-[#E63946]">+</span></p>
+              <p className="font-heading text-5xl text-white leading-none">2<span className="text-[#E63946]">+</span></p>
               <p className="font-subheading uppercase text-xs tracking-[0.25em] text-white/60 mt-2">Years In The Game</p>
             </div>
           </motion.div>

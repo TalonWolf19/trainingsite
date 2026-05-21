@@ -4,7 +4,7 @@ import { fadeUp } from "@/lib/motion";
 import { Award, Users, Calendar } from "lucide-react";
 
 const ABOUT_IMG =
-  "https://images.pexels.com/photos/4720783/pexels-photo-4720783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+  "https://customer-assets.emergentagent.com/job_coach-elite-training/artifacts/xv1mn6i1_WhatsApp%20Image%202026-05-21%20at%2007.24.41.jpeg";
 
 function useCountUp(target, duration = 1600, start = false) {
   const [value, setValue] = useState(0);
@@ -61,8 +61,8 @@ function Counter({ value, suffix, label, testId }) {
 }
 
 const BADGES = [
-  { icon: Calendar, label: "10+ Years Experience" },
-  { icon: Users, label: "500+ Athletes Coached" },
+  { icon: Calendar, label: "2+ Years Experience" },
+  { icon: Users, label: "50+ Athletes Coached" },
   { icon: Award, label: "S&C Certified" },
 ];
 
@@ -75,12 +75,12 @@ export default function About() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 lg:gap-16">
         <motion.div {...fadeUp} className="lg:col-span-5 relative">
-          <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="relative aspect-[4/5] overflow-hidden bg-[#242424]">
             <img
               src={ABOUT_IMG}
-              alt="Coach Arymmann Singh training"
+              alt="Coach Aryammann Singh"
               loading="lazy"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover object-top hover:scale-105 transition-all duration-700"
             />
             <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#1A1A1A] to-transparent" />
           </div>
@@ -110,10 +110,10 @@ export default function About() {
 
           <div className="mt-8 space-y-5 text-white/75 leading-relaxed max-w-2xl">
             <p>
-              I&apos;m <strong className="text-white">Arymmann Singh</strong> — a
-              certified Strength &amp; Conditioning coach with over a decade of
-              experience programming for collegiate, professional and combat-sport
-              athletes. From the platform to the pitch, I&apos;ve helped 500+ athletes
+              I&apos;m <strong className="text-white">Aryammann Singh</strong> — a
+              certified Strength &amp; Conditioning coach with 2+ years of
+              hands-on experience programming for competitive athletes and serious
+              lifters. From the platform to the pitch, I&apos;ve helped 50+ athletes
               hit personal records and stay healthy doing it.
             </p>
             <p>
@@ -124,8 +124,8 @@ export default function About() {
           </div>
 
           <div className="mt-10 grid grid-cols-3 gap-6">
-            <Counter value={10} suffix="+" label="Years Coaching" testId="counter-years" />
-            <Counter value={500} suffix="+" label="Athletes Coached" testId="counter-athletes" />
+            <Counter value={2} suffix="+" label="Years Coaching" testId="counter-years" />
+            <Counter value={50} suffix="+" label="Athletes Coached" testId="counter-athletes" />
             <Counter value={37} suffix="" label="Sport PRs / mo" testId="counter-prs" />
           </div>
 
