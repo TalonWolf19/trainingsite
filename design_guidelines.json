@@ -1,0 +1,93 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 2: The Performance Pro",
+  "colors": {
+    "background": "#1A1A1A",
+    "surface": "#242424",
+    "surface_hover": "#2D2D2D",
+    "primary": "#E63946",
+    "primary_hover": "#F0545F",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "border": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "fonts_to_import": "https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap",
+    "headings_font_primary": "Anton, sans-serif",
+    "headings_font_secondary": "Oswald, sans-serif",
+    "body_font": "DM Sans, sans-serif",
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl font-normal tracking-wide uppercase",
+      "h2": "text-4xl md:text-5xl font-normal uppercase tracking-normal",
+      "h3": "text-2xl md:text-3xl font-bold uppercase tracking-wide",
+      "body": "text-base md:text-lg tracking-wide leading-relaxed"
+    }
+  },
+  "spacing_and_layout": {
+    "general": "Generous spacing. p-8, p-12, p-16 for main sections to let elements breathe.",
+    "border_radius": "rounded-none for maximum tactical, brutalist aesthetic. Avoid rounded corners completely to portray elite precision.",
+    "grids": "Use rigid bento grids for Services. Overlapping asymmetry for the 'Philosophy' section.",
+    "alignment": "Optical alignment over geometrical. Left-align text blocks for clarity, use bold typography for visual weight."
+  },
+  "motion_and_interactions": {
+    "scrolling": "Lenis smooth scroll is MANDATORY for premium momentum feel. Install and implement.",
+    "page_load": "Staggered fade-up animations (Framer Motion) on text and images (y: 20, opacity: 0 -> y: 0, opacity: 1).",
+    "hover_states": "Buttons and interactive cards translate -translate-y-1 on hover. No soft shadows. Use sharp 1px borders."
+  },
+  "components": {
+    "buttons": "Sharp edges, flat color. Primary: bg-[#E63946] text-white hover:bg-[#F0545F] uppercase font-bold tracking-widest. Secondary: border border-[#E63946] text-[#E63946] hover:bg-[#E63946] hover:text-white uppercase font-bold tracking-widest.",
+    "cards": "bg-[#242424] border border-white/10 p-6 md:p-8. High contrast, technical look.",
+    "inputs": "Shadcn based. Custom style: bg-transparent border-b border-white/20 rounded-none focus:border-[#E63946] focus:ring-0. Minimalist tactical input.",
+    "badges": "bg-[#E63946]/10 text-[#E63946] border border-[#E63946]/20 px-3 py-1 text-xs uppercase font-bold tracking-widest"
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/d733dd52-652f-4789-986b-d94d7b5dab4d/images/43bd2f43ef1bf3b9ce4f4cb14fcc315c39a8a20f604a2ed4de983d4477a087fe.png",
+      "description": "Abstract motion blur of a sprinter in pure black and charcoal grey with a streak of electric red light."
+    },
+    "hero_texture_overlay": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/d733dd52-652f-4789-986b-d94d7b5dab4d/images/3b145dbf6c0a049ce87403d9c016ad529f0f619408857ce5894be11ece0f05f9.png",
+      "description": "Dark charcoal tactical grid texture with subtle electric red glowing accents. Use for pricing or CTA section backgrounds."
+    },
+    "about_section_image": {
+      "url": "https://images.pexels.com/photos/4720783/pexels-photo-4720783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Muscular adult lifting weights in a modern gym setting."
+    },
+    "services_card_1": {
+      "url": "https://images.pexels.com/photos/12698200/pexels-photo-12698200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Athlete in red preparing to sprint on an outdoor track field."
+    },
+    "services_card_2": {
+      "url": "https://images.unsplash.com/photo-1772450014622-1c209d012c2e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxhdGhsZXRlJTIwbGlmdGluZyUyMHdlaWdodHN8ZW58MHx8fHwxNzc5MzI3NzE4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Woman lifting a heavy barbell in a gym."
+    },
+    "services_card_3": {
+      "url": "https://images.pexels.com/photos/14585533/pexels-photo-14585533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Close-up of a runner's legs ready to start a race."
+    },
+    "blog_preview_1": {
+      "url": "https://images.unsplash.com/photo-1774599466554-420f3ec1ca56?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxneW0lMjBiYXJiZWxsJTIwcGxhdGVzfGVufDB8fHx8MTc3OTMyNzcxOHww&ixlib=rb-4.1.0&q=85",
+      "description": "Colorful weight plates stacked in a gym."
+    },
+    "blog_preview_2": {
+      "url": "https://images.pexels.com/photos/28636776/pexels-photo-28636776.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Close-up of stacked weight plates in a modern gym setting."
+    },
+    "transformation_image": {
+      "url": "https://images.unsplash.com/photo-1664673531303-c933ac4cee70?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxhdGhsZXRlJTIwbGlmdGluZyUyMHdlaWdodHN8ZW58MHx8fHwxNzc5MzI3NzE4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Fitness action shot."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Load Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap');",
+    "Assign font-family for tailwind classes in tailwind.config.js: font-heading: 'Anton', font-subheading: 'Oswald', font-body: 'DM Sans'.",
+    "Use Phosphor Icons (yarn add @phosphor-icons/react) for a sharp, tactical look. Avoid generic rounded icons.",
+    "Ensure all interactive elements have 'data-testid' attributes (e.g., data-testid='hero-cta-button', data-testid='contact-submit').",
+    "Use pure HTML/Tailwind for complex overlapping marketing layouts; only use Shadcn components for forms, inputs, and standard UI elements.",
+    "Background must be exactly #1A1A1A everywhere. Do not use generic Tailwind slate or gray.",
+    "For the Hero background image, apply an overlay of bg-black/60 to ensure the pure white text is perfectly legible and meets APCA standards.",
+    "Implement a sticky navigation bar with a glassmorphic dark effect (backdrop-blur-xl bg-[#1A1A1A]/70) and a sharp 1px bottom border (border-white/10).",
+    "For the Pricing Section: The middle tier should have a prominent #E63946 border, a 'Most Popular' badge, and slightly scale up (scale-105 on desktop) to establish hierarchy.",
+    "Do NOT use HTML-based components for advanced user interactions; use Shadcn UI components but heavily customize them to remove all border-radius (rounded-none)."
+  ]
+}
