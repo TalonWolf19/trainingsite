@@ -111,13 +111,7 @@ export default function Contact() {
               <p className="font-subheading uppercase text-[10px] tracking-[0.3em] text-white/40">
                 Email
               </p>
-              <p className="font-body text-white/90 mt-1">coach@forge-athletics.com</p>
-            </div>
-            <div>
-              <p className="font-subheading uppercase text-[10px] tracking-[0.3em] text-white/40">
-                Facility
-              </p>
-              <p className="font-body text-white/90 mt-1">Iron District, Austin TX</p>
+              <p className="font-body text-white/90 mt-1">singharyamann26@gmail.com</p>
             </div>
           </div>
         </motion.div>

@@ -123,10 +123,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-3 gap-6">
+          <div className="mt-10 grid grid-cols-2 gap-6">
             <Counter value={2} suffix="+" label="Years Coaching" testId="counter-years" />
             <Counter value={50} suffix="+" label="Athletes Coached" testId="counter-athletes" />
-            <Counter value={37} suffix="" label="Sport PRs / mo" testId="counter-prs" />
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3">

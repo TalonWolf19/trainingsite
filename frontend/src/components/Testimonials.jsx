@@ -4,28 +4,28 @@ import { Star, Quote } from "lucide-react";
 
 const ITEMS = [
   {
-    name: "Marcus L.",
-    sport: "D1 Football, Linebacker",
+    name: "Adhiraj Kurl",
+    sport: "Cricketer — State Level",
     quote:
-      "Added 4 inches to my vertical and ran a 4.52 at Pro Day. Alex's programming is the most surgical I've ever followed.",
-    metric: "+4\" Vertical",
+      "Training with Aryamann bhaiya since 3 months. I just entered the U-19 age group and was really slow without much strength. In these 3 months I've gotten fast and strong — from running 20m in 2.91s, broad jump 2.45m, to trap bar deadlift 150kg for 3 reps as a 16-year-old is really satisfying.",
+    metric: "150kg Deadlift",
     img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&q=80",
   },
   {
-    name: "Priya S.",
-    sport: "Powerlifter, 75kg",
+    name: "Raghuvar",
+    sport: "State Cricketer",
     quote:
-      "Hit a 195kg deadlift after 9 months. He understands female athletes — recovery, hormones, cycle-based loading. Game changer.",
-    metric: "+30kg Deadlift",
-    img: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=200&q=80",
+      "Training under Aryamann for the past two months has been truly rewarding. I've noticed a clear boost in my strength, and that growth is a direct outcome of his steady guidance and support. From fine-tuning my technique to addressing even the smallest questions, Aryamann is always there — patient, knowledgeable, and genuinely committed to my progress.",
+    metric: "Strength Up",
+    img: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80",
   },
   {
-    name: "Diego R.",
-    sport: "MMA / Bantamweight",
+    name: "Anuradha",
+    sport: "Powerlifter — State Champion",
     quote:
-      "Three fight camps with Alex. Zero injuries, peak weight cut, and I've never felt this explosive in the cage. Period.",
-    metric: "3-0 Record",
-    img: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80",
+      "Training with Aryamann since 8 months. As a Masters category powerlifter I had knee and shoulder issues, but for the past 8 months I've been pain-free and felt strong. My deadlift went up 30kg and bench went up by 15kg. As a mom and dog-mom I face time and recovery issues — but Aryamann tracks everything and the results have been amazing.",
+    metric: "+30kg Deadlift",
+    img: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=200&q=80",
   },
 ];
 
