@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/motion";
 import { Send, Flame } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const FORMSPREE_ID = process.env.REACT_APP_FORMSPREE_CONSULTATION_ID;
 
 const GOALS = [
   { value: "athletic-performance", label: "Athletic Performance" },
@@ -50,16 +49,36 @@ export default function Contact() {
   const submit = async (ev) => {
     ev.preventDefault();
     if (!validate()) return;
+    if (!FORMSPREE_ID) {
+      toast.error("Form not configured", {
+        description: "Set REACT_APP_FORMSPREE_CONSULTATION_ID in your env vars.",
+      });
+      return;
+    }
     setSubmitting(true);
     try {
-      await axios.post(`${API}/consultation`, form);
+      const goalLabel = GOALS.find((g) => g.value === form.goal)?.label || form.goal;
+      await axios.post(
+        `https://formspree.io/f/${FORMSPREE_ID}`,
+        {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          goal: goalLabel,
+          training_mode: form.mode === "in-person" ? "In-Person" : "Online",
+          message: form.message,
+          _subject: `New Consultation Request — ${form.name}`,
+        },
+        { headers: { Accept: "application/json" } }
+      );
       toast.success("Consultation request received", {
         description: "Coach Aryammann will reach out within 24 hours.",
       });
       setForm(initialState);
     } catch (err) {
       toast.error("Something went wrong", {
-        description: err?.response?.data?.detail || "Please try again in a moment.",
+        description:
+          err?.response?.data?.error || "Please try again in a moment.",
       });
     } finally {
       setSubmitting(false);

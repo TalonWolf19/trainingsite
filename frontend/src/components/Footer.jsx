@@ -3,8 +3,7 @@ import axios from "axios";
 import { toast } from "sonner";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const FORMSPREE_NEWSLETTER_ID = process.env.REACT_APP_FORMSPREE_NEWSLETTER_ID;
 
 // TikTok icon (lucide doesn't ship a stable one)
 const TikTokIcon = (props) => (
@@ -38,18 +37,25 @@ export default function Footer() {
       toast.error("Enter a valid email");
       return;
     }
+    if (!FORMSPREE_NEWSLETTER_ID) {
+      toast.error("Newsletter not configured", {
+        description: "Set REACT_APP_FORMSPREE_NEWSLETTER_ID in your env vars.",
+      });
+      return;
+    }
     setLoading(true);
     try {
-      await axios.post(`${API}/newsletter`, { email });
+      await axios.post(
+        `https://formspree.io/f/${FORMSPREE_NEWSLETTER_ID}`,
+        { email, _subject: "New Newsletter Subscriber" },
+        { headers: { Accept: "application/json" } }
+      );
       toast.success("You're in", { description: "Weekly training tips incoming." });
       setEmail("");
     } catch (err) {
-      const detail = err?.response?.data?.detail;
-      if (err?.response?.status === 409) {
-        toast.info("Already subscribed", { description: detail });
-      } else {
-        toast.error("Subscription failed", { description: detail || "Try again later." });
-      }
+      toast.error("Subscription failed", {
+        description: err?.response?.data?.error || "Try again later.",
+      });
     } finally {
       setLoading(false);
     }
